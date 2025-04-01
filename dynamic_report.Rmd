@@ -21,15 +21,6 @@ latest_data <- logged_data %>%
 ```
 
 ```{css}
-/* Boxed section for charts */
-.boxed {
-  border: 3px solid #333;
-  padding: 15px;
-  margin: 20px 0;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  text-align: center; /* center the items */
-}
 
 /* Headings color */
 h2 {
@@ -45,8 +36,6 @@ h3 {
 
 This report summarizes the types of videos shown on the YouTube homepage based on 20 observations I recorded using Google Forms. My goal is to understand what categories appear most frequently, how long these videos typically are, and whether I am interested in watching them.
 
-<!-- Start of boxed chart section by adding <div> with class name as boxed -->
-<div class="boxed">
 
 ```{r}
 mean_duration <- mean(latest_data$duration, na.rm = TRUE)
@@ -64,5 +53,3 @@ ggplot(latest_data) +
 
 
 ```
-</div>
-<!-- End of boxed chart section by adding <div> with class name as boxed -->
